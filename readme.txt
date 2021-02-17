@@ -19,3 +19,18 @@ php artisan make:model Author -m
 php artisan make:model Book -m
 
 php artisan migrate:fresh
+
+php artisan make:seeder AuthorsTableSeeder
+php artisan make:seeder BooksTableSeeder
+
+php artisan migrate:fresh
+
+php artisan db:seed
+
+php artisan make:factory AuthorFactory
+php artisan make:factory BookFactory
+
+php artisan db:seed
+
+php artisan migrate:fresh
+php artisan db:seed
