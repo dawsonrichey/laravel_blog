@@ -10,7 +10,6 @@ $factory->define(Author::class, function (Faker $faker) {
         'name' => $faker->name,
         'title' => $faker->jobTitle,
         'company' => $faker->company,
-        'email' => $faker->unique()
-        ->companyEmail,
+        'email' => $faker->unique()->companyEmail
     ];
 });

@@ -34,3 +34,14 @@ php artisan db:seed
 
 php artisan migrate:fresh
 php artisan db:seed
+
+php artisan tinker
+  Author::first()
+  Author::all()
+  Author::count()
+  Book::first()
+  Book::all()
+  Book::count()
+  Book::first()->author
+  Author::first()->books
+  Author::first()->books->count()
