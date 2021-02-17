@@ -45,3 +45,9 @@ php artisan tinker
   Book::first()->author
   Author::first()->books
   Author::first()->books->count()
+
+php artisan make:controller RegularController //remove
+php artisan make:controller ResourceController -r //remove
+
+php artisan make:controller AuthorController -r --api
+php artisan make:controller BookController -r --api
